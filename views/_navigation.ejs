@@ -1,0 +1,21 @@
+<!-- id user is logged in then show links else show empty box  -->
+<% if (_locals.user){ %>
+    <div id='nav' class='flex' style="margin: 0;">
+     
+            <a href="/"><Button style="font-size: 17px; width: 200px; height: 50px;margin-left: -150px; margin-top: 50px;">Home</Button></a>
+            <a href="/download"><Button style="font-size: 17px; width: 200px; height: 50px;margin-left:230px; margin-top: 50px;">Download Current Record</Button> </a>
+            <h1  style="font-size:50px; color: brown; margin-left: -900px; margin-top:50px;"> Main Menu</h1>
+            <div id="cnt">
+        <ul>
+            <li><a href="/student/view">1.View Registered Students</a></li>
+            <li><a href="/interview/view">2.View Interviews Aligned</a></li>
+            <li><a href="/batch/view">3.View Current Batches</a></li>
+            <li><a href="/company/view">4.View Registered Companies</a></li>
+            <li><a href="/job/view">5.View Jobs Posted</a></li>
+            <li></li>
+        </ul>
+    </div>
+    </div>
+<% }else{ %>
+    <div style="min-height: 70px;"></div>
+<% } %>

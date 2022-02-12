@@ -1,0 +1,366 @@
+*{
+    box-sizing:inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0%;
+    background-color:lightsalmon;
+    color: white;
+}
+
+#header-body{
+    background-color: lightcoral;
+    color: brown;
+    border: 2px solid black;
+}
+
+#pagetitle{
+    margin: auto;
+    padding-top: 10px;
+    display: inline-block;
+    font-family:inherit;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-left: 500px;
+   
+
+}
+#anim{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -5;
+    opacity: 0.5;
+    margin: 0%;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    margin: 20px 40px 10px;
+}
+
+input,select,textarea {
+    display: block;
+    background-color:whitesmoke;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 5px 20px;
+    color: azure;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+button{
+    padding: 5px 15px;
+    border: 1px solid black;
+    font-size: small;
+    border-radius: 10px;
+    background-color:red;
+    display: inline-block;
+    margin: auto;
+    color: aliceblue;
+    
+}
+
+
+#nav{
+    width: 100%;
+    display: flex;
+    margin-left: -20px;
+}
+#nav :hover{
+    color:yellow;
+    
+}
+
+#cnt{
+    margin-top: 100px;
+}
+
+#cnt li{
+    display:block;
+    margin-top: 20px;
+    font-size: 20px;
+    color: blue;
+}
+
+
+#cnt ul{
+    margin-left:-550px;
+   
+}
+
+
+a{
+   
+    text-decoration: none;
+}
+
+li :hover{
+    color:yellow;
+    
+}
+h1,h3,h2{
+    text-align: center;
+}
+
+i,ul{
+    
+    padding-left:0px ;
+}
+li{
+    list-style: none;
+}
+form{
+   width:400px;
+   margin-left: 420px;
+   padding: 0px 20px 20px;
+}
+.updateform{
+    margin: auto;
+    width: 100%;
+    border: none ;
+    border-radius: 20px;
+    padding: 0px 20px 20px;
+}
+
+.submit{
+    color: aliceblue;
+    font-size: medium;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+}
+.auth{
+  
+    vertical-align:top;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+}
+
+.bar{
+    font-size: large;
+    font-weight: bold;
+    color: blue;
+}
+
+
+
+.flex{
+    border-radius: 20px;
+    padding: 0px 20px 20px;
+    margin: 0 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.dash{
+    width: 100px;
+  
+    background-color: transparent;
+    margin: 10px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.item{
+    width: 300px;
+    background-color:transparent;
+    margin: 10px;
+    display: inline-block;
+    padding: 20px;
+    color: black;
+}
+.item:hover{
+    background-color:yellow;
+    color: black;
+}
+
+p{
+    text-align: center;
+}
+
+
+.dashImg{
+    width: 180px;
+    height: 180px;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 10px;
+    align-self: center;
+}
+.dash:hover{
+    background-color:yellow;
+}
+
+.dash{
+    width: 180px;
+   
+   
+    background-color: transparent;
+    padding: 10px;
+}
+
+.rightshift{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.rightshift :hover{
+    color: yellow;
+}
+
+
+#image_1{
+    margin-left: 390px;
+    margin-top: -10px;
+    height: 300px;
+    width: 500px;
+}
+
+
+#image_2{
+    margin-left: 430px;
+    margin-top: -10px;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:700px){
+    #pagetitle{
+        padding-top: 30px;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    img{
+        height: 30px;
+        width: 30px;
+        margin: 20px 20px 5px;
+    }
+    
+    input,select,textarea {
+        border-radius: 12px;
+        font-size: small;
+        padding: 2px 10px;
+        margin-top: 7px;
+
+    }
+
+    button{
+        padding: 2px 5px;
+        font-size: 10px;
+    }
+    .rightshift{
+        margin-top: 25px;
+        margin-right: 5px;
+    }
+    
+    .auth{
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+    
+    .flex{
+        border-radius: 10px;
+        padding: 0px 10px 10px;
+        margin: 0 2%;
+        width: 96%;
+    }
+    
+    
+    
+    .item,.dash{
+        width: 200px;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+    }
+    .dashImg{
+        width: 150px;
+        height: 100px;
+    }
+    
+    .dash{
+        width: 160px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .submit{
+        padding: 2px 5px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    h1,h2{
+        font-size: 18px;
+    }
+    p,h3{
+        font-size: 12px;
+        margin: 5px;
+    }
+    form{
+        width: 300px;
+        border-radius: 20px;
+        padding: 0px 20px 20px;
+    }
+
+    #morejd{
+        font-size: 10px;
+    }
+}
+
+#header-body{
+    border-bottom: 2px solid black ; 
+    box-shadow:  0 0 2px 2px rgba(236, 239, 243, 0.57);
+}
+
+
+
+@media only screen and (max-width:470px){
+    #pagetitle{
+        padding-top: 20px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    img{
+        height: 25px;
+        width: 25px;
+        margin: 15px 10px 2px;
+    }
+    .auth{
+        margin-top: 20px;
+        margin-left: 2px;
+    }
+    .username{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    button {
+        padding: 2px;
+        font-size: 10px;
+    }
+    button>i{
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+}

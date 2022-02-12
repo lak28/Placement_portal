@@ -1,0 +1,33 @@
+
+<!-- headers data  -->
+<div id="header-body">
+  
+
+    <!-- title  -->
+    <h1 id="pagetitle">Placement Portal</h1> 
+
+    <!-- if user is logged in show signout and profile buttons -->
+    <% if (_locals.user){ %>
+                
+                    <a class="bar rightshift username" href="/users/profile">
+                        <%= _locals.user.name %>
+                    </a>
+            
+                
+                    <a  class="bar rightshift" href="/users/signOut">Sign Out</a>
+                
+    <% }else{ %>
+        <!-- if users not logged in shown signin Signup buttons -->
+       
+                    <a class="bar rightshift" href="/users/signIn">Sign In</a>
+           
+         
+                    <a class="bar rightshift username" href="/users/signUp">Sign Up</a>
+      
+
+    <% } %>
+
+    
+    
+
+</div>

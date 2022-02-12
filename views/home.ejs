@@ -1,0 +1,50 @@
+<!-- if users is signed in then show navigation buttons else keep an empty window along with sign in sign up buttons  -->
+<% if (_locals.user){ %>
+    <div class="flex">
+        
+        <!-- create student feature  -->
+        <a href="/student/add">
+            <div class="dash">
+                <img class="dashImg" src="/images/student_1.jpg" alt="Student Image">
+                <button class="submit">Create Student</button>
+            </div>
+        </a>
+        <!-- craete interview feature  -->
+        <a href="/interview/add">
+            <div class="dash">
+                <img class="dashImg" src="/images/interview.jpg" alt="interview Image">
+                <button class="submit">Schedule Interview</button>
+            </div>
+        </a>
+        <!-- post jopb feature  -->
+        <a href="/job/add">
+            <div class="dash">
+                <img class="dashImg" src="/images/job_1.jpg" this.src='/images/batch.jpg'" alt="Job Image">
+                <button class="submit">Post Job</button>
+            </div>
+        </a>
+        <!-- create batch feature  -->
+        <a href="/batch/add">
+            <div class="dash">
+                <img class="dashImg" src="/images/batch.jpg" onerror="this.onerror=null; this.src=''" alt="Batch Image">
+                <button class="submit">Create Batch</button>
+            </div>
+        </a>
+        <!-- create company  -->
+        <a href="/company/add">
+            <div class="dash">
+                <img class="dashImg" src="/images/company.jpg" alt="Company Image">
+                <button class="submit">Create Company</button>
+            </div>
+        </a>
+            
+    </div>
+<% }else{ %>
+    <!-- if user is not logged show them sign in sign up buttons  -->
+    <h1 style="letter-spacing: 5px;">Welcome to  Placement Cell!!!</h1>
+
+    <p>A portal to keep track of our students</p>
+   <img id="image_1" src="/images/main_page.jpg">
+    
+    <!-- <a href="/users/auth/google"><button class="submit"><i class="fab fa-google-plus-g"></i>Google SinIn/Sign Up</button></a> -->
+<% } %>
