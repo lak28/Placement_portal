@@ -1,4 +1,4 @@
-// File to contain the Routes information of the batches
+// File to contain the Database format of the batches
 
 const mongoose=require('mongoose');
 const { Schema } = require("mongoose");
