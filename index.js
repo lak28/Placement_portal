@@ -1,6 +1,12 @@
+//Main Server JavaScript file
+
+
+//require dependencies
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const app = express();
+
+//Port No on which application will run
 var port = process.env.PORT ||3000;
 const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/mongoose');
