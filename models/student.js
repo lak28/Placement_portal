@@ -1,3 +1,5 @@
+// File to contain the Database format of the Students
+
 const mongoose=require('mongoose');
 const { Schema } = require("mongoose");
 
