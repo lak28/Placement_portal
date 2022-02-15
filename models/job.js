@@ -1,4 +1,4 @@
-// File to contain the Database format of the batches
+// File to contain the Database format of the Jobs
 
 const mongoose=require('mongoose');
 // schema to store jobs details 
