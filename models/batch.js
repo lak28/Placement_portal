@@ -1,3 +1,5 @@
+// File to contain the Routes information of the batches
+
 const mongoose=require('mongoose');
 const { Schema } = require("mongoose");
 // schema for batch it includes all the batches and students registred batch
