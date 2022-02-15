@@ -1,3 +1,5 @@
+// File to contain the controllers to add and view students information
+
 const Student= require('../models/student');
 const Batch=require('../models/batch');
 const mailer = require('../mailers/mailerController');
