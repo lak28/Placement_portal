@@ -1,3 +1,5 @@
+// File to contain the Routes information for the batches
+
 // import instance of express 
 const express = require("express");
 const router = express.Router();
