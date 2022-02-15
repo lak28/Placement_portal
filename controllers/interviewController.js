@@ -1,3 +1,5 @@
+// File to contain the controllers of the interviews
+
 const Interview=require('../models/interview');
 const Company=require('../models/company');
 const Student=require('../models/student');
