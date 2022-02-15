@@ -1,3 +1,5 @@
+// File to contain the Database format of the student interviews
+
 const mongoose=require('mongoose');
 const { Schema } = require("mongoose");
 // schema for intreviews
