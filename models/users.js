@@ -1,3 +1,5 @@
+// File to contain the main Database format of the application
+
 const mongoose=require('mongoose');
 
 // schema to store all users 
