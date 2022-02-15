@@ -1,10 +1,11 @@
+// a passport file to authenticate user with certain functions
 const passport = require("passport");
 const googleStrategy=require('passport-google-oauth').OAuth2Strategy;
 
 const crypto=require('crypto');
 const User=require('../models/users');
 
-//tell passport to use new starategy
+//tell passport to use the new starategy
 passport.use(new googleStrategy({
     // client secrets and client id 
     clientID:'1071472878165-dvj60v3qrs1gqrj8cppp6foia0qmnbmg.apps.googleusercontent.com',
@@ -18,11 +19,11 @@ passport.use(new googleStrategy({
             console.log(profile);
             if(user){
 
-                // if user founthen set this as user
+                // if user is found then set this as user
                 return done(null,user);
             }
             else{
-                // ifuser not found creating the user
+                // if user is not found creating the user
                 User.create({
                     name:profile.displayName,
                     email:profile.emails[0].value,
