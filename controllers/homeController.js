@@ -1,3 +1,5 @@
+// File to contain the Controller of the main page
+
 const User = require('../models/users');
 
 module.exports.home= async function (req,res){
