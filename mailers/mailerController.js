@@ -1,3 +1,5 @@
+// File to contain the controllers of the mailer
+
 const nodemailer=require('../config/nodemailer');
 
 // user add function gets called when new user has signed up 
