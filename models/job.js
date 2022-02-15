@@ -1,3 +1,5 @@
+// File to contain the Database format of the batches
+
 const mongoose=require('mongoose');
 // schema to store jobs details 
 const jobSchema=new mongoose.Schema({
