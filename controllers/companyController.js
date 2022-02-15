@@ -1,4 +1,4 @@
-// File to contain the controllers of the batches
+// File to contain the controllers about the company
 
 const Company=require('../models/company');
 
