@@ -1,3 +1,5 @@
+// File to contain the Database format of the company saved
+
 const mongoose=require('mongoose');
 // schema to create n store company details  
 const companySchema=new mongoose.Schema({
