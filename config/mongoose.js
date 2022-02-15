@@ -2,7 +2,7 @@
 // seeting up database using mongodb
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://lak2896:12345@cluster0.92kkk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://lak2896:12345@cluster0.92kkk.mongodb.net/placementDatabase?retryWrites=true&w=majority');
 
 const db = mongoose.connection;
 
