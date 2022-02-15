@@ -1,3 +1,5 @@
+// File to contain the controllers of the batches
+
 const Company=require('../models/company');
 
 // loading form to add company 
