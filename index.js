@@ -50,7 +50,7 @@ app.use(session({
         maxAge: (1000 * 60 * 100)
     },
     store: MongoDbStore.create({
-        mongoUrl: 'mongodb://localhost:27017/placement_development',
+        mongoUrl: 'mongodb+srv://lak2896:12345@cluster0.92kkk.mongodb.net/placementDatabase?retryWrites=true&w=majority',
         mongooseConnection:db,
         autoRemove: 'disabled'
     },function(err){
