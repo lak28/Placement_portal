@@ -1,3 +1,5 @@
+//paasport file use for authentication purpose
+
 const passport = require('passport');
 
 const LocalStrategy = require('passport-local').Strategy;
@@ -5,7 +7,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/users');
 
 
-// authentication using passport
+// authentication of user using passport
 passport.use(new LocalStrategy({
         usernameField: 'email',
         passReqToCallback:true
@@ -19,13 +21,13 @@ passport.use(new LocalStrategy({
                 return done(err);
             }
 
-            // if user not found or password doesnt matched returning false
+            // if user is not found or password doesnt matched returning false
             if (!user || user.password != password){
                 req.flash('error','Invalid Username/Password');
                 return done(null, false);
             }
 
-            // if user found return user
+            // if user is found return the user
             return done(null, user);
         });
     }
