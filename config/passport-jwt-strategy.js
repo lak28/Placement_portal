@@ -1,4 +1,4 @@
-// importing libraries 
+// libraries 
 const passport=require('passport');
 const jwtStrategy=require('passport-jwt').Strategy;
 const ExtractJwt=require('passport-jwt').ExtractJwt;
@@ -9,7 +9,7 @@ let opts={
     jwtFromRequest : ExtractJwt.fromAuthHeaderAsBearerToken(),
     secretOrKey : 'Codeial'
 }
-// using jwt strategy 
+// using the jwt strategy 
 passport.use(new jwtStrategy(opts,function(jwtPayload,done){
     // searching for user in user table in db
     User.findById(jwtPayload._id,function(err,user){
@@ -18,11 +18,11 @@ passport.use(new jwtStrategy(opts,function(jwtPayload,done){
             console.log("error in finding user in jwt",err);
         }
 
-        // if user found returning user 
+        // if user is found then returning the user 
         if(user){
             return done(null,user);
         }else{
-            // if user not found returning false 
+            // if user is not found then returning false 
             return done(null,false);
         }
 
