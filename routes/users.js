@@ -1,3 +1,5 @@
+// File to contain main Routes information
+
 // import instance of express 
 const express = require("express");
 const router = express.Router();
